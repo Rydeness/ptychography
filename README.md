@@ -45,9 +45,8 @@ Copyright and license issues should follow the agreements in their codes and/or 
 -----------------------
 The interface and data handling parts of the codes were writen by Zhen Chen. 
 Details on the data set and collection conditions can be found in
-Zhen Chen, Michal Odstrcil, Yi Jiang, Yimo Han, Ming-Hui Chiu, Lain-Jong Li, David A. Muller
-Mixed-state electron ptychography enables sub-angstrom resolution imaging with picometer precision at low dose 
-under review on Nature Communications.
+"Mixed-state electron ptychography enables sub-angstrom resolution imaging with picometer precision at low dose",
+Zhen Chen, Michal Odstrcil, Yi Jiang, Yimo Han, Ming-Hui Chiu, Lain-Jong Li, David A. Muller, Nature Communications, (under review)
 
 This paper should be cited whenever this code, dataset or their derivatives are used.
  
