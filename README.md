@@ -5,24 +5,28 @@ Addtional notes about the codes on electron ptychography
 ----------------------
 To run reconstruction, run the main drive script: ptychography_clean_drive.m. Before doing this, please refer to the notes below:
  
-1. read README.md for details about the algorithms and settings. 
+1. Download the ptychography package from PSI (http://www.psi.ch/sls/csaxs/software).
 
-2. Experimental data (supple. Fig. 4 in the manuscript) is assumed to be put in the same folder as the main folder of the codes with the path: 
+2. Replace the Data.m script by the new one from this deposit. Also put all the scripts given here to the same folder as the ptychogrpahy package.
+
+3. Read README.md for details about the algorithms and settings from PSI's package. 
+
+4. Experimental data (supple. Fig. 4 in the manuscript) is assumed to be put in the same folder as the main folder of the codes with the path: 
     .\rawdata_21\rawdata_1x_crop.mat
 	You need to change the drive script accordingly if you put the data somewhere else.
 		
-3. Look into the script ptychography_clean_drive.m and check / modify parameters.
+5. Look into the script ptychography_clean_drive.m and check / modify parameters.
 
-4. Important parameters are parameters for data related and some of the reconstruction ones.
+6. Important parameters are parameters for data related and some of the reconstruction ones.
 
-5. For the example dataset and using the default parameters (300 iterations with 128 x 128 pixels for each diffraction), 
+7. For the example dataset and using the default parameters (300 iterations with 128 x 128 pixels for each diffraction), 
    it will take less than 10 minutes on a decent GPU card (memory > 1 GB) and about two hours on CPU.
    It is the top-left corner and only about contains 1/4 diffractoins. 
    
    if no computational GPU card is available, please changes to use CPU:
    param.use_gpu = false; % use GPU
    
-6. The outputs are in a folder defined by variable 'dir_base' within data folder and the phase image is under name:
+8. The outputs are in a folder defined by variable 'dir_base' within data folder and the phase image is under name:
      MLs_backgroundremove_final_crop_phase.png
 	 All input parameters are stored in sample_pty_inputs.mat 
 	 Clean reconstructions are in MLs_backgroundremove_final_crop_data.mat
