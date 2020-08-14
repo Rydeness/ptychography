@@ -31,7 +31,9 @@ To run reconstruction, run the main drive script: ptychography_clean_drive.m. Be
 	 All input parameters are stored in sample_pty_inputs.mat 
 	 Clean reconstructions are in MLs_backgroundremove_final_crop_data.mat
 	 raw reconstructions are in sample_pty_refine_outputs.mat
-	 
+
+9. There is an error when using multiple probe modes (param.Nprobes>1). 
+For a quick fix, replace line 306 with "self.probe{ll} = apply_probe_contraints(self.probe{ll}, self.modes{min(ll,end)});" in LSQML-code/+engines/LSQML.m
 ----------------------
 ----------------------
 
