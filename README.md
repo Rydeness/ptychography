@@ -48,7 +48,8 @@ Copyright and license issues should follow the agreements in their codes and/or 
 The interface and data handling parts of the codes were writen by Zhen Chen. 
 Details on the data set and collection conditions can be found in
 "Mixed-state electron ptychography enables sub-angstrom resolution imaging with picometer precision at low dose",
-Zhen Chen, Michal Odstrcil, Yi Jiang, Yimo Han, Ming-Hui Chiu, Lain-Jong Li, David A. Muller, Nature Communications, (under review)
+Zhen Chen, Michal Odstrcil, Yi Jiang, Yimo Han, Ming-Hui Chiu, Lain-Jong Li, David A. Muller, Nature Communications, 11, 2994 (2020).
+https://doi.org/10.1038/s41467-020-16688-6
 
 This paper should be cited whenever this code, dataset or their derivatives are used.
  
